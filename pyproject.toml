@@ -1,0 +1,23 @@
+[project]
+name = "base"
+version = "0.1.0"
+description = "Claude Code 向け node + python のベース環境"
+requires-python = ">=3.13"
+dependencies = []
+
+[dependency-groups]
+dev = [
+    "ruff>=0.6",
+    "pytest>=8",
+]
+
+# アプリ用途のため非パッケージ扱い（ビルド不要で uv sync する）。
+[tool.uv]
+package = false
+
+[tool.ruff]
+line-length = 100
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
