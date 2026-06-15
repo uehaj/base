@@ -19,11 +19,11 @@ uv sync
 
 ## よく使うコマンド
 
-| 目的 | Node | Python |
-|---|---|---|
-| Lint | `pnpm lint` | `uv run ruff check .` |
+| 目的   | Node          | Python                 |
+| ------ | ------------- | ---------------------- |
+| Lint   | `pnpm lint`   | `uv run ruff check .`  |
 | Format | `pnpm format` | `uv run ruff format .` |
-| Test | `pnpm test` | `uv run pytest` |
+| Test   | `pnpm test`   | `uv run pytest`        |
 
 ## 構成
 
