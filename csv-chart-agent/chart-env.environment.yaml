@@ -1,0 +1,8 @@
+name: data-viz-env
+config:
+  type: cloud
+  networking:
+    # unrestricted so the agent can `pip install` matplotlib/pandas if the
+    # sandbox image doesn't already have them. Tighten to `limited` +
+    # allow_package_managers: true if you want egress control.
+    type: unrestricted
