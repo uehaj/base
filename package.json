@@ -12,7 +12,8 @@
     "lint": "eslint src tests",
     "lint:fix": "eslint src tests --fix",
     "format": "prettier --write .",
-    "test": "node --test"
+    "test": "node --test",
+    "deploy:cf": "npx --yes wrangler@latest pages deploy"
   },
   "devDependencies": {
     "@eslint/js": "^9.0.0",
